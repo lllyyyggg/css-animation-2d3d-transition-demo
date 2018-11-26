@@ -1,0 +1,33 @@
+.touch {
+    float: right;
+    position: relative;
+    top: 100px;
+    height: 30px;
+    right: 0px; 
+}
+.touch .left {
+    height: 100%;
+    background: red;
+    float: left;
+    transition: width 1s;
+    overflow: hidden;
+}
+.touch .left div{
+    transition: display 0.3s;
+}
+.touch .right {
+    width: 30px;
+    height: 100%;
+    background: green;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
