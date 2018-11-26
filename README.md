@@ -198,7 +198,25 @@ rotateY()		y轴旋转
 ```
 	
  
+# `map和reduce`
 
+```
+let classes = ['box', 'box-
+
+// '', box, 0
+// box, box-long, 1
+let result = classes.reduce((temp, current, index) => { 
+            
+     return temp + current + '' + index
+}, 'start')
+console.log(result)
+//result : startbox0box-long1
+
+classes = classes.map(e => e + e)
+console.log(classes)
+//result :  ["boxbox", "box-longbox-long"] 
+```
+        
 
 
 	
