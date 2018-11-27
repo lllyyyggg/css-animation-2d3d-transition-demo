@@ -11,21 +11,28 @@ class App extends Component {
         <div>
           <MyBox/> 
         </div>
-        <div style={{maxWidth:'50%', display:'inline-block'}}>
-        <Box/>
-          <Box/>
-          <Box/>
-          <Box/>
-          <Box/>
+        <div>
           <Box/>
           <Box/>
           <Box/>
         </div>
         
+        <div>
           <Right/>
-
-          <Touch/>
+        </div>
+        <div style={{clear:"both"}}></div>
+        <div>
+        <Touch/>
+        </div>
         
+        <div>
+        <Touch/>
+        
+        </div>
+        
+        <div>
+        <Touch/>
+        </div>
       </div>
     );
   }

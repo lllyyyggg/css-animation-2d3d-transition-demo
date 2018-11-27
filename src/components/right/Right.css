@@ -1,6 +1,6 @@
 
 .right-bar {
-    position:  absolute;
+    float: right;
     top:0px; 
     right:0px;
     width:10%;
@@ -17,7 +17,7 @@
 }
 .left {
     background-color: rgba(255, 0, 100, 0.6);
-    transition: width 0s, display 0s;
+    transition: width 0.3s, display 0.3s;
     width: 75%;
     font-size: 14px;
     line-height: 30px;
@@ -48,6 +48,8 @@ a:hover {
     
     .left {
         display: none;
+        width: 0px;
+        overflow: hidden;
         color: #ffffff;
     }
     .right {

@@ -1,33 +1,8 @@
-.touch {
-    float: right;
-    position: relative;
-    top: 100px;
-    height: 30px;
-    right: 0px; 
-}
-.touch .left {
-    height: 100%;
-    background: red;
-    float: left;
-    transition: width 1s;
+.foo .left {
+    transition: width 3s;
     overflow: hidden;
+    /* 强制文本不换行 */
+    white-space: nowrap;    
+    line-height: 50px;
+    font-size: 30px;
 }
-.touch .left div{
-    transition: display 0.3s;
-}
-.touch .right {
-    width: 30px;
-    height: 100%;
-    background: green;
-    float: right;
-}
-
-
-
-
-
-
-
-
-
-

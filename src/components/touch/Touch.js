@@ -6,23 +6,58 @@ class Touch extends React.Component {
         this.handleMouseEnter = this.handleMouseEnter.bind(this)
         this.handleMouseLeave = this.handleMouseLeave.bind(this)
         this.state= {
-            left_width : '0px',
-            left_content:''
+            left_width : '0%',
+            left_content: <div style={{minWidth:'80px'}}>
+            定
+            海
+            神
+            针
+            清
+            屏
+            专
+            用
+            清
+            屏
+            专
+            用
+            清
+            屏
+            专
+            用
+            清
+            屏
+            专
+            用
+            清
+            屏
+            专
+            用
+            清
+            屏
+            专
+            用
+            。</div>
         }
     }
     handleMouseEnter() {
-        this.setState({...this.state, left_width : '80px',left_content:<div style={{minWidth:'80px'}}>hello world</div>})
+        this.setState({...this.state, left_width : '75%',left_content: this.state.left_content})
     }
     handleMouseLeave() {   
-        this.setState({...this.state, left_width : '0px',left_content:<div style={{minWidth:'70px'}}>hello world</div>})
+        this.setState({...this.state, left_width : '0%',left_content: this.state.left_content})
     }
     render() {
         return (
-            <div className='touch'>
-                <div id="left" className='left' style={{
-                    width : this.state.left_width
-                }}>{this.state.left_content}</div>
-                <div className='right' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}></div>
+            <div>    
+                <div className='foo'
+                    onMouseEnter={this.handleMouseEnter}
+                    onMouseLeave = {this.handleMouseLeave}
+                >
+                <div className='right' style={{display:'inline-block', width:'25%',height:'50px', backgroundColor: 'green', float:'right'}}></div> 
+                    <div className='left' style={{display:'inline-block', width: this.state.left_width,height:'50px', backgroundColor: 'red', float:'right' }}>{this.state.left_content}</div> 
+                </div>
+                <br/>
+                <br/>
+                <br/>
             </div>
         )
     }
